@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', san-serif;
+}
+.cont{
+	display: inline;
+}
+.cont nav{
+	background-color: #3D3838;
+	overflow: hidden;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+}
+.cont span{
+	background-color: #E78200;
+	padding: 3px 10px; 
+	border-radius: 5px
+}
+.cont nav ul{
+	display:flex;
+	list-style: none;
+	float: right;
+	position: relative;
+	top: 5px;
+}
+.cont nav ul li a{
+	text-decoration: none;
+	color: white;
+	margin: 20px 10px;
+	cursor: pointer;
+}
+.cont nav h2{
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 2px;
+	color: white;
+	transition: 0.3s ease;
+}
+.cont nav h2::before{
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	height: 3px;
+	width: 0;
+	background: linear-gradient(90deg,#6528EF,#E80AF6);
+	border-radius: 50px;
+	transition: all 0.3s ease;
+}
+.cont nav h2:hover{
+	color: #81CAF8;
+}
+.cont nav h2:hover::before{
+	width: 100%;
+}
+.container{
+	width: 100%;
+	padding: 25px
+}
+.container section{
+	padding: 12px;
+}
+.container video{
+	width: 100%;
+}
+.container p{
+	width: 100%;
+}
+.container2{
+	width: 100%;
+	text-align: center;
+}
+.container2 button{
+	display: inline-block;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	background:linear-gradient(90deg,#6528EF,#E80AF6);
+	border:none; 
+	cursor: pointer;
+	transition: 0.3s;
+}
+.container2 button:nth-child(1):hover{
+	padding:10px 30px;
+	font-size: 12px
+}
+.container2 button:nth-child(2):hover{
+	padding:10px 30px;
+	font-size: 12px
+}.container2 button:nth-child(3):hover{
+	padding:10px 30px;
+	font-size: 12px
+}
+.container2 button a{
+	text-decoration: none;
+	color: white;
+}
+.footer{
+	position: relative;
+	bottom:0;
+	padding: 15px 20px;
+	width: 100%;
+	background-color: #E2DFDF;
+	height: 200px;
+	overflow: auto;
+}
+.footer p{
+	height: 100%;
+	color: #727070;
+	text-align: center;
+	font-size: 0.8rem
+}
+::-webkit-scrollbar{
+	width: 10px
+}
+::-webkit-scrollbar-track{
+	background-color: rgba(255,255,255,0.5);
+}
+::-webkit-scrollbar-thumb{
+	background:linear-gradient(#6528EF,#E80AF6);
+}
+@media only screen and (max-width: 372px){
+	.cont nav{
+		padding: 2px;
+	}
+	.cont nav ul li a{
+		margin: 5px;
+	}
+}
+@media only screen and (max-width: 302px){
+	.cont nav ul li a{
+		display: none;
+	}
+}
+@media only screen and (max-width: 1024px){
+	.container video{
+	width: 100%;
+	}
+	.container{
+	padding: 0;
+	}
+	.container p{
+		width: 100%
+	}
+}
+@media only screen and (max-width: 400px){
+	.container2{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+	}
+	.container2 button{
+		margin-top: 1px;
+		width: 100%;
+		padding:10px;
+	}
+}
